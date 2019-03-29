@@ -1,0 +1,2 @@
+El objetivo del ejercicio 4 es mostrar la evolución diaria y volumen mensual de las N criptomonedas (entre 5 y 15) con mejor ranking pudiendo interactuar entre los distintos campos, y a su vez mostrar información relativa a las mismas.
+También se puede acceder a la web oficial de cada una de las criptomonedas haciendo click en la imagen de los correspondientes logos.
