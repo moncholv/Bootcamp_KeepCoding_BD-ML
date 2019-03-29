@@ -1,0 +1,60 @@
+2019-01-21 20:42:58 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapybot)
+2019-01-21 20:42:58 [scrapy.utils.log] INFO: Versions: lxml 4.2.6.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.7 (default, Oct 22 2018, 11:32:17) - [GCC 8.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.0j  20 Nov 2018), cryptography 2.4.2, Platform Linux-4.14.79+-x86_64-with-Ubuntu-18.04-bionic
+2019-01-21 20:42:58 [scrapy.crawler] INFO: Overridden settings: {'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}
+2019-01-21 20:42:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-01-21 20:42:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-01-21 20:42:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-01-21 20:42:58 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-01-21 20:42:58 [scrapy.core.engine] INFO: Spider opened
+2019-01-21 20:42:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-21 20:42:58 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-01-21 20:42:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters> (referer: None)
+2019-01-21 20:42:58 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=2&ranking=1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-01-21 20:42:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=2&ranking=1> (referer: https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters)
+2019-01-21 20:42:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=3&ranking=1> (referer: https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=2&ranking=1)
+2019-01-21 20:42:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=4&ranking=1> (referer: https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=3&ranking=1)
+2019-01-21 20:42:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=5&ranking=1> (referer: https://www.tapology.com/rankings/current-top-ten-best-pound-for-pound-mma-and-ufc-fighters?page=4&ranking=1)
+2019-01-21 20:42:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-01-21 20:42:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3484,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 225390,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'dupefilter/filtered': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 1, 21, 20, 42, 59, 917198),
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 7,
+ 'memusage/max': 164528128,
+ 'memusage/startup': 164528128,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2019, 1, 21, 20, 42, 58, 228609)}
+2019-01-21 20:42:59 [scrapy.core.engine] INFO: Spider closed (finished)
