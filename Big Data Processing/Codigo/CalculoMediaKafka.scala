@@ -79,14 +79,10 @@ object CalculoMediaKafka {
 
     val mejoresNaves = diferenciasMedias.transform(rdd => rdd.sortBy(x => x._2,false))
     val joinedNavesDiferMedias = mejoresNaves.transform(rdd => rdd.join(naves))
-    val joinedNavesDiferMediasOrdered = joinedNavesDiferMedias.transform(
-      rdd => rdd.sortBy(x => x._2,false))
+    val joinedNavesDiferMediasOrdered = joinedNavesDiferMedias.transform(rdd => rdd.sortBy(x => x._2,false))
 
     //joinedNavesDiferMediasOrdered.print()
 
     ssc.start()
-    ssc.awaitTermination()
-
-    /* /home/ricardo/IdeaProjects/Spark_Scala_Template/in/interestelar/data_rt.csv */
   }
 }
